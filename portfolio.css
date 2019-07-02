@@ -1,0 +1,378 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    min-width: 320px;
+    width: 100%; height: 50px;
+    background-color: #dedede;
+    opacity: 0.7;
+}
+
+.header_wrap{
+    min-width: 320px; 
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header_name p{
+    font-weight: bold;
+    cursor: default;
+}
+
+.header_nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_nav ul li{
+    padding:0 10px;
+}
+
+.header_nav ul li:nth-child(2){
+    padding: 0;
+}
+
+.header_nav ul li a{
+    color: #333;
+}
+
+.header_nav ul li a:hover{
+    color: black;
+}
+
+.explan{
+    position: fixed;
+    z-index: 2000;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(228, 226, 224, 0.7);
+}
+
+.explan_wrap{
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 21px;
+    background-color: rgba(228, 226, 224, 0.7);
+}
+
+.explan_text{
+    margin: 15px 0;
+}
+
+.explan_title{
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+    background-color: #ff0062;
+    padding: 5px;
+    margin: 8px 0;
+    cursor: default;
+}
+
+.explan_sub{
+    font-size: 12px;
+    line-height: 1.3;
+    color: black;
+    cursor: default;
+}
+
+.explan_close{
+    position: absolute;
+    top: 10px; right: 10px;
+    cursor: pointer;
+}
+
+.explan_close img{
+    width: 30px; height: 30px;
+}
+
+.go{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ff0062;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.go:hover{
+    color: white;
+    background-color: #ff0062;
+    border: 1px solid #ff0062;
+}
+
+main{
+    width: 100%;
+}
+
+section{
+   min-width: 320px; width: 100%;
+   min-height: 100vh;
+}
+
+.visual{
+    background-image: url('http://tndus5837.dothome.co.kr/flex_img/bg.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webikt-background-size:cover;
+    background-size: cover;
+    position: relative;
+}
+
+.visual_shadow{
+    position: absolute;
+    width: 100%; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.visual_textwrap{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    min-width: 320px;
+}
+
+.visual_title{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+    cursor: default;
+}
+
+.visual_subtitle{
+    font-size: 28px;
+    color: white;
+    cursor: default;
+}
+
+#about_me,#my_work{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#my_work::after{
+    content: '';
+    width: 25px; height: 3px;
+    background-color: #ff0062;
+    position: absolute;
+}
+
+footer::before{
+    content: '';
+    width: 25px; height: 3px;
+    background-color: #ff0062;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 150px 120px;
+}
+
+.con_title{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 80px 0;
+    cursor: default;
+}
+
+.con_text p{
+    font-size: 12px;
+    line-height: 1.2;
+    color: #d0cccc;
+    cursor: default;
+}
+
+.about_ul{
+    margin-top: 80px;
+}
+
+.about_ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about_ul ul li:nth-child(2){
+    flex-grow: 2;
+}
+
+.about_ul ul li{
+    padding: 0 20px;
+}
+
+.about_ul ul li p{
+    font-size: 13px;
+    margin-top: 13px;
+    color:#666666;
+    cursor: default;
+}
+
+.about_ul ul li p.li_title{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.work_ul{
+    margin-top: 80px;
+}
+
+.work_ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work_ul ul li{
+    padding: 0 20px;
+}
+
+.img_wrap{
+    width: 250px; height: 150px;
+}
+
+.img_wrap img{
+    display: inline-block;
+    width: 100%; height: 100%;
+}
+
+.img_text{
+    margin-top: 13px;
+}
+
+.img_text a{
+    font-size: 12px;
+    color: black;
+    padding: 5px;
+}
+
+footer{
+    width: 100%; min-width: 320px; height: 200px;
+}
+
+.footer_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer_text{
+    font-size: 12px;
+    color: #666666;
+    cursor: default;
+}
+
+@media screen and (max-width: 1200px){
+    .wrap{
+        padding: 0 100px 120px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .visual_title{
+        font-size: 52px;
+    }
+
+    .visual_subtitle{
+        font-size: 20px;
+    }
+
+    .about_ul ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_ul ul li{
+        margin-top: 40px;
+    }
+
+    .about_ul ul li:nth-child(1){
+        margin-top: 0;
+    }
+    .work_ul ul{
+        flex-wrap: wrap;
+    }
+
+    .work_ul ul li:nth-child(3),.work_ul ul li:nth-child(4){
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .visual_title{
+        font-size: 42px;
+    }
+
+    .wrap{
+        padding:0 50px 60px;
+    }
+
+    .con_text p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    footer{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .work_ul ul li:nth-child(2){
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .wrap{
+        padding:0 10px 20px;
+    }
+
+    .explan_wrap{
+        padding:10px;
+    }
+
+    .explan_title{
+        font-size: 14px;
+    }
+
+    .explan_sub{
+        font-size: 9px;
+    }
+
+    .explan_close img{
+        width: 15px; height: 15px;
+    }
+
+    .go{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,900|Raleway:400,700" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><!--구형브라우저 html5사용가능-->
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><!--구형브라우저 css3가능-->
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><!--IE8이하 미디어쿼리 인식-->
+
+        <script>
+            jQuery(document).ready(function($){
+                $(".scroll").click(function(event){
+                
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop:$(this.hash).offset().top},500);
+                });
+            });
+
+            $(function(){
+                $("#ex_1").click(function() {
+                    $("#ex_name").text("졸업 작품");
+                    $("#ex_sub").html("main페이지 외 4페이지<br>데스크탑, 태블릿, 모바일 지원<br>졸업작품으로서 웹 기반 애플리케이션 중 반응형웹을 제작하였습니다.");
+                    $("#ex_part").text("디자인 100%, 퍼블리싱 100%");
+                    $(".go").attr("href", "http://tndus5837.dothome.co.kr/main.html");
+                    $(".explan").show();
+                });
+
+                $("#ex_2").click(function() {
+                    $("#ex_name").text("네이버 공식사이트 카피");
+                    $("#ex_sub").html("main페이지<br>데스크탑, 태블릿, 모바일 지원<br>미디어쿼리를 이용해 반응형 홈페이지를 제작하였습니다.");
+                    $("#ex_part").text("퍼블리싱 100%");
+                    $(".go").attr("href", "http://tndus5837.dothome.co.kr/naver.html");
+                    $(".explan").show();
+                });
+
+                $("#ex_3").click(function() {
+                    $("#ex_name").text("포트폴리오");
+                    $("#ex_sub").html("main페이지<br>데스크탑, 태블릿, 모바일 지원<br>미디어쿼리를 이용해 반응형 홈페이지를 제작하였습니다.");
+                    $("#ex_part").text("디자인 100%, 퍼블리싱 100%");
+                    $(".go").attr("href", "http://tndus5837.dothome.co.kr/portfolio.html");
+                    $(".explan").show();
+                });
+
+                $("#ex_4").click(function() {
+                    $("#ex_name").text("라인프렌즈 공식사이트 카피");
+                    $("#ex_sub").html("main페이지<br>데스크탑, 태블릿, 모바일 지원<br>미디어쿼리를 이용해 반응형 홈페이지를 제작하였습니다.");
+                    $("#ex_part").text("퍼블리싱 100%");
+                    $(".go").attr("href", "http://tndus5837.dothome.co.kr/line/line.html");
+                    $(".explan").show();
+                });
+
+                $(".explan_close").click(function(){
+                    $(".explan").hide();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header_wrap">
+                <div class="header_name">
+                    <p>GwakSuyeon</p>
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li><a href="#about_me" class="scroll">About me</a></li>
+                        <li><a href="#my_work" class="scroll">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </header>
+
+        <main>
+            <section class="visual">
+                <div class="visual_shadow"></div>
+                <div class="visual_textwrap">
+                    <p class="visual_title">WEB PUBLISHER</p>
+                    <p class="visual_subtitle">Gwak Su Yeon</p>
+                </div>
+            </section>
+
+            <section id="about_me">
+                <div class="wrap">
+                    <p class="con_title">ABOUT ME</p>
+                    <div class="con_text">
+                        <p>안녕하세요. 방문해주셔서 감사합니다. 열정과 정성을 담아 만든 포트폴리오입니다.</p>
+                        <p>마음에 드시면 언제든 편하게 연락주세요</p>
+                    </div>
+                    <div class="about_ul">
+                        <ul>
+                            <li>
+                                <p class="li_title">PROFILE</p>
+                                <p>곽수연</p>
+                                <p>25/여</p>
+                                <p>서울시 관악구</p>
+                                <p>tndus5837@daum.net</p>
+                            </li>
+                            <li>
+                                <p class="li_title">HISTORY</p>
+                                <p>15.03~19.02 동아대학교 컴퓨터공학과 졸업</p>
+                            </li>
+                            <li>
+                                <p class="li_title">KEYWORDS</p>
+                                <p>#웹표준</p>
+                                <p>#반응형</p>
+                                <p>#javascript&jquery</p>
+                                <p>#디자인가능</p>
+                                <p>#하드코딩</p>
+                                <p>#성실함</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="my_work">
+                <div class="wrap">
+                    <p class="con_title">MY WORK</p>
+                    <div class="con_text">
+                        <p>포트폴리오는 기존에 있는 사이트를 카피하여 구현하거나 직접 디자인하여 제작하였습니다.</p>
+                        <p>개인적인 작업물로 해당기업과는 관련이 없습니다.</p>
+                    </div>
+
+                    <div class="work_ul">
+                        <ul>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="http://tndus5837.dothome.co.kr/flex_img/protfolio_1.JPG" alt="사이트1">
+                                </div>
+                                <div class="img_text">
+                                    <a href="http://tndus5837.dothome.co.kr/main.html">바로가기</a>
+                                    <a href="#my_work" id="ex_1">설명</a>
+                                </div>
+ 
+                                <div class="explan" style="display:none;">
+                                    <div class="explan_wrap">
+                                        <div class="explan_text">
+                                            <p class="explan_title">TITLE</p>
+                                            <p class="explan_sub" id="ex_name">졸업 작품</p>
+                                        </div>
+                
+                                        <div class="explan_text">
+                                            <p class="explan_title">EXPLANATION</p>
+                                            <p class="explan_sub" id="ex_sub">
+                                                main페이지 외 4페이지<br>
+                                                데스크탑모드<br>
+                                                졸업작품으로서 웹 기반 애플리케이션 중 웹을 제작하였습니다.
+                                            </p>
+                                        </div>
+                
+                                        <div class="explan_text">
+                                            <p class="explan_title">PARTICIPATION</p>
+                                            <p class="explan_sub" id="ex_part">
+                                                디자인 100%, 퍼블리싱 100%
+                                            </p>
+                                        </div>
+                
+                                        <div class="explan_close">
+                                            <img src="http://tndus5837.dothome.co.kr/naver_img/btn_exit.png" alt="close">
+                                        </div>
+                                        
+                                        <a href="http://tndus5837.dothome.co.kr/main.html" class="go">바로가기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="http://tndus5837.dothome.co.kr/flex_img/protfolio_2.JPG" alt="사이트2">
+                                </div>
+                                <div class="img_text">
+                                    <a href="http://tndus5837.dothome.co.kr/naver.html">바로가기</a>
+                                    <a href="#my_work" id="ex_2">설명</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="http://tndus5837.dothome.co.kr/flex_img/protfolio_3.JPG" alt="사이트3">
+                                </div>
+                                <div class="img_text">
+                                    <a href="http://tndus5837.dothome.co.kr/portfolio.html">바로가기</a>
+                                    <a href="#my_work" id="ex_3">설명</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="http://tndus5837.dothome.co.kr/flex_img/protfolio_4.JPG" alt="사이트4">
+                                </div>
+                                <div class="img_text">
+                                    <a href="http://tndus5837.dothome.co.kr/line/line.html">바로가기</a>
+                                    <a href="#my_work" id="ex_4">설명</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer_wrap">
+                <p class="footer_text">
+                    ©2019.곽수연.all rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
